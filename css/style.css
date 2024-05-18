@@ -665,7 +665,7 @@ img {
 }
 
 .text-grey {
-  color: #bfb8ae;
+  color: #bfb8ae !important;
   /* text-align: justify; */
 }
 .brown-btn {
