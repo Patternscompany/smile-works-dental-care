@@ -118,4 +118,21 @@
     });
     
 })(jQuery);
+const menu1 = document.querySelector(".caret");
+const navbar1 = document.querySelector(".dropdown-submenu");
+
+menu1.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        if (window.innerWidth <= 992) {
+            
+            navbar1.forEach((navItem, navIndex) => {
+                if (navIndex !== index) {
+                    navItem.classList.remove("active");
+                }
+            });
+          
+            navbar1[index].classList.toggle("active");
+        }
+    });
+});
 

@@ -3204,7 +3204,8 @@ fieldset:disabled .btn {
   position: absolute;
   z-index: 1000;
   display: none;
-  min-width: 12rem;
+  /* min-width: 12rem; */
+  width: 300px;
   padding:0 0rem ;
   margin: 0;
   font-size: 1rem;
@@ -10040,6 +10041,9 @@ fieldset:disabled .btn {
 }
 .dropdown-submenu {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .dropdown-submenu .dropdown-menu {
   display: none;
@@ -10053,8 +10057,38 @@ fieldset:disabled .btn {
 }
 .caret{
   float: right;
+  padding-right: 1rem;
+  color: white;
+}
+.drop {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 15px;
+}
+.drop a{
+  padding: 0 !important;
+}
+.fa-angle-down{
+  float: right;
+  color: white;
 }
 .dropdown-submenu.dropdown-menu:hover {
   display: block;
  text-decoration: underline;
+}
+@media(max-width:992px){
+  .dropdown-submenu:hover .dropdown-menu{
+    display: none;
+   
+  }
+  .dropdown-submenu.active .dropdown-menu{
+    display: block;
+   
+  }
+  .drop {
+   padding: 0;
+    justify-content: space-between;
+  
+    }
 }
