@@ -425,16 +425,37 @@
           </div>
           <h1 class="dentistry-heading">Dentistry, Done Right.</h1></br>
           <div class="color">
-            <p class="fine">Say goodbye to dental anxiety and hello to a healthy, exceptional smile, today.</p>
-            <div class="pt-3">
-              <p class="point"> <i class="fa fa-check check-icon"></i> THE UAE'S TOP AWARD-WINNING DENTAL TEAM</p>
-              <p class="point"> <i class="fa fa-check check-icon"></i> EXPERTS IN MINDFUL DENTAL CARE</p>
-              <P class="point"> <i class="fa fa-check check-icon"></i> KNOWLEDGE & COMPASSION DRIVEN EXCELLENCE</P>
+            <p class="fine">Say goodbye to dental anxiety and hello to a healthy, exceptional smile, today.
+            </p>
+            <ul class="pt-3">
+              <li class="point d-flex align-items-center  ">
+                <span>
+                  <i class="fa fa-check check-icon"></i>
+                </span>
+                <span>
+                  THE UAE'S TOP AWARD-WINNING DENTAL TEAM
+                </span>
+              </li>
+              <li class="point d-flex align-items-center">
+                <span>
+                  <i class="fa fa-check check-icon"></i>
+                </span>
+                <span>
+                  EXPERTS IN MINDFUL DENTAL CARE
+                </span>
+              </li>
+              <li class="point d-flex align-items-center"> 
+                <span>
+                  <i class="fa fa-check check-icon"></i>
+                </span>
+                <span>
+                  KNOWLEDGE & COMPASSION DRIVEN EXCELLENCE
+                </span>
+               </li>
+            </ul>
+            <div class="d-flex justify-content-center review-img">
+              <img src="img/google review.jpg" class="stamp-img">
             </div>
-
-            <img src="img/google review.jpg" class="stamp-img">
-
-
           </div>
         </div>
         <div class="col-lg-6 col-md-12 hero-img d-flex justify-content-center align-content-end ">
@@ -491,6 +512,11 @@
       font-size: 15px;
     }
 
+    .color ul {
+      list-style-type: none;
+      padding-left: 10px;
+    }
+
     .hero-img {
       position: relative;
     }
@@ -514,6 +540,22 @@
       /* margin-right: 150px; */
       width: 28%;
       margin-top: 15px;
+      @media (max-width:992px) {
+       right: 1%;
+       margin-top: 5px;
+      }
+    }
+
+    .promises-container br{
+      @media(max-width:992px){
+        display: none;
+      }
+    }
+
+    .review-img{
+      @media (min-width:992px){
+        justify-content: flex-start !important;
+      }
     }
 
     .dentistry-heading {
@@ -529,8 +571,8 @@
     }
   </style>
   <div class="container-fluid px-5 py-5 text-center promises-container">
-    <h2 style="color:#bfb8ae;" class="py-3 text-uppercase">Our Promise</h2>
-    <p style="">At SWDC we specialize in
+    <h2 class="py-3 text-uppercase">Our Promise</h2>
+    <p>At SWDC we specialize in
       minimaly invasive dentistry,<br>
       offering cutting edge treatments, that preserve your natural teeth,<br>
       while giving you the awe worthy <br>
@@ -546,9 +588,12 @@
       background-color: #000000;
 
       @media (max-width:992px) {
-        padding: 0 !important;
-        padding-block: 10px !important;
+        padding: 20px !important;
       }
+    }
+
+    .promises-container h2 {
+      color: #bfb8ae;
     }
 
     .promises-container p {
@@ -556,6 +601,10 @@
       text-align: center;
       color: #ffff;
       font-size: 20px;
+
+      @media (max-width:992px) {
+        font-size: 15px !important;
+      }
     }
   </style>
 
@@ -696,10 +745,10 @@
   </div>
   <!-- Appointment End -->
 
-  <div class="container-fluid  text-center " style="background-color:#594D40; padding: 100px;">
+  <div class="container-fluid  text-center service-container">
 
     <div class="row">
-      <p style="text-align: center; color:#ffff; font-size: 30px; margin-bottom: 100px;">What We Have</p>
+      <p>What We Have</p>
       <div class="col-lg-4 d-flex flex-column justify-content-center align-items-center col-md-4">
         <img src="./img/teeth1.jpg">
         <h6 class="desc-heading">RESPONSIBLE DENTISTRY</h6>
@@ -726,11 +775,17 @@
     .desc-heading {
       margin-top: 50px;
       color: #ffffff;
+      @media (max-width:992px){
+        margin-top: 20px;
+      }
     }
 
     .desc-para {
       margin-top: 50px;
       color: #ffffff;
+      @media (max-width:992px){
+        margin-top: 20px;
+      }
     }
 
     .combo {
@@ -756,14 +811,30 @@
       color: #bfb8ae;
       font-weight: bold;
     }
+    .service-container{
+      background-color:#594D40; 
+      padding: 100px;
+      @media (max-width:992px){
+        padding: 30px;
+      }
+    }
+    .service-container p:first-child{
+      text-align: center;
+       color:#ffff; 
+       font-size: 30px; 
+       margin-bottom: 100px;
+       @media (max-width:992px){
+        margin-bottom: 30px;
+       }
+    }
   </style>
   <div class="container-fluid px-0">
 
     <div class="container" role="listbox">
       <div class="row">
-        <div class="col-lg-6 col-md-12  py-5" style="margin-top: 90px;">
+        <div class="col-lg-6 col-md-12 d-flex flex-column align-items-start " >
 
-          <p style="font-size: 25px; padding-top: 80px;">Smile Works Dental Care</p>
+          <p style="font-size: 25px; padding-top: 40px;">Smile Works Dental Care</p>
 
           <h1 style="padding-bottom: 10px; color: #594D40; font-size: 60px;">Changing Smiles, Changing Lives.</h1></br>
 
@@ -772,7 +843,7 @@
           <p style="color: #000000; font-size: 20px;">We helped Katerina achieve the smile of her dreams, guiding her
             through a truly remarkable dental journey. Discover the details of this transformative experience below.</p>
 
-          <button style="margin-top: 140px; padding:30px; ;"><a href=""></a>
+          <button class="justify-content-end " style="padding:30px;"><a href="#"></a>
             WATCH NOW
           </button>
 
@@ -780,7 +851,7 @@
 
         </div>
         <div class="col-lg-6 col-md-12 hero-img">
-          <img src="img/Dr.Sidharth.jpg" class="main-image pt-5" alt="First slide">
+          <img src="img/Dr.Sidharth.jpg" class="w-100 pt-5" alt="First slide">
 
         </div>
 
