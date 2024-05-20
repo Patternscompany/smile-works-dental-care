@@ -53,7 +53,7 @@
 
 
   <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg bg-white navbar-dark shadow-sm p-sm-2 p-lg-5 py-lg-0">
+  <nav class="navbar navbar-expand-lg bg-white navbar-dark shadow-sm py-lg-0 p-2">
     <div class="col-6 logo col-lg-4 py-3">
       <a href="/" class="d-flex  align-items-center">
         <!-- Smileworks Dental Care -->
@@ -406,15 +406,11 @@
 
     <div class="container" role="listbox">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-6 col-md-12  py-5">
+        <div class="col-lg-6 col-md-12  p-2">
           <div class="para">
             <p>EXCEPTIONAL CARE BY EXPERT EDUCATORS</p>
           </div>
-          <h1
-            style="" class="dentistry-heading">
-            Dentistry, Done Right.</h1></br>
-
-
+          <h1 class="dentistry-heading">Dentistry, Done Right.</h1></br>
           <div class="color">
             <p class="fine">Say goodbye to dental anxiety and hello to a healthy, exceptional smile, today.</p>
             <div class="pt-3">
@@ -428,7 +424,7 @@
 
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 hero-img">
+        <div class="col-lg-6 col-md-12 hero-img d-flex">
           <img src="img/smilly.jpg" class="main-image pt-5" alt="First slide">
           <img src="img/stamp.jpg" class="stamp-img">
         </div>
@@ -445,7 +441,8 @@
       font-size: 24px;
       line-height: 31px;
       color: #594D41;
-      @media (max-width:992px){
+
+      @media (max-width:992px) {
         text-align: center;
         font-size: 20px;
       }
@@ -459,7 +456,8 @@
       margin-top: 10px;
       /* padding-top: 17px; */
     }
-    .point{
+
+    .point {
       font-weight: bolder;
       font-size: 13px;
     }
@@ -469,7 +467,8 @@
       color: #594D41;
       letter-spacing: 1px;
       font-size: 14px;
-      @media (max-width:992px){
+
+      @media (max-width:992px) {
         text-align: center;
       }
     }
@@ -485,9 +484,13 @@
 
     .hero-img .main-image {
       max-width: 90%;
-      min-height: 80%;
+      min-height: auto;
       margin-top: 140px;
       /* margin-right: 200px; */
+      @media (max-width:992px){
+        margin-top: 0;
+        padding-top: 0s;
+      }
     }
 
     .hero-img .stamp-img {
@@ -498,11 +501,13 @@
       width: 28%;
       margin-top: 15px;
     }
-    .dentistry-heading{
-      color: #ffff; 
-      padding-bottom: 10px; 
-      font-size: 50px; 
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+
+    .dentistry-heading {
+      color: #ffff;
+      padding-bottom: 10px;
+      font-size: 50px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+
       @media (max-width:992px) {
         text-align: center;
         font-size: 25px;
