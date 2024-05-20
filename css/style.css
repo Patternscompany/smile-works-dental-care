@@ -5,6 +5,11 @@
   --light: #eef9ff;
   --dark: #091e3e;
 }
+html, body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 h1,
 h2,
 .font-weight-bold {
