@@ -6825,6 +6825,7 @@ fieldset:disabled .btn {
 }
 .text-black-50 {
   color: #000000 !important;
+  /* text-align: justify; */
 }
 .text-white-50 {
   color: rgba(255, 255, 255, 0.5) !important;
