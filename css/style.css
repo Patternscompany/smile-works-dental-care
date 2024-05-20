@@ -673,7 +673,7 @@ img {
 .dental-parag {
   color: black;
   display: inline-block;
-  /* text-align: justify; */
+  text-align: justify;
   font-size: 1.1rem;
 }
 
