@@ -237,7 +237,7 @@ img {
   /* background: linear-gradient(rgba(9, 30, 62, 0.85), rgba(9, 30, 62, 0.85)),
     url(../img/carousel-1.jpg) center center no-repeat;
   background-size: cover; */
-  background-color: #000000;
+  background-color: #c8bfb8;
   
 }
 .hero-header1 {
@@ -358,9 +358,9 @@ img {
 }
 
 .whatsapp a i {
-  color: #000000;
+  color: #ffffff;
   font-size: 35px;
-  background-color: #e1c41f;
+  background-color: lightgreen;
   border-radius: 50%;
   padding: 10px;
   animation: wh 2s linear infinite;
