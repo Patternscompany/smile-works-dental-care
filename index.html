@@ -424,7 +424,7 @@
 
           </div>
         </div>
-        <div class="col-lg-6 col-md-12 hero-img d-flex">
+        <div class="col-lg-6 col-md-12 hero-img d-flex justify-content-center align-content-end ">
           <img src="img/smilly.jpg" class="main-image pt-5" alt="First slide">
           <img src="img/stamp.jpg" class="stamp-img">
         </div>
@@ -483,13 +483,14 @@
     }
 
     .hero-img .main-image {
-      max-width: 90%;
+      max-width: 100%;
       min-height: auto;
       margin-top: 140px;
+
       /* margin-right: 200px; */
-      @media (max-width:992px){
+      @media (max-width:992px) {
         margin-top: 0;
-        padding-top: 0s;
+        padding-top: 0;
       }
     }
 
@@ -514,12 +515,12 @@
       }
     }
   </style>
-  <div class="container-fluid px-5 py-5 text-center" style="background-color:#000000;">
+  <div class="container-fluid px-5 py-5 text-center promises-container">
     <h2 style="color:#bfb8ae;" class="py-3 text-uppercase">Our Promise</h2>
-    <p style="max-width: 50%;margin: auto;text-align: center; color: #ffff; font-size: 20px;">At SMDC we specialize in
-      minimaly invasive dentistry,
-      offering cutting edge treatments, that preserve your natural teeth,
-      while giving you the awe worthy
+    <p style="">At SWDC we specialize in
+      minimaly invasive dentistry,<br>
+      offering cutting edge treatments, that preserve your natural teeth,<br>
+      while giving you the awe worthy <br>
       smile you deserve.
     </p>
 
@@ -527,6 +528,23 @@
 
 
   <!-- About End -->
+  <style>
+    .promises-container {
+      background-color: #000000;
+
+      @media (max-width:992px) {
+        padding: 0 !important;
+        padding-block: 10px !important;
+      }
+    }
+
+    .promises-container p {
+      margin: auto;
+      text-align: center;
+      color: #ffff;
+      font-size: 20px;
+    }
+  </style>
 
   <p class="hai">OUR AWARD-WINNING SERVICES</p>
   <div class="container-fluid py-5">
