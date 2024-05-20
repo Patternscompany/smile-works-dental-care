@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
 
 
-  
 </head>
 
 <body>
@@ -430,14 +432,14 @@
             </a>
 
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler">
+           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
                 <div class="nav-item dropdown">
                     <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
-
+                    <i class="fa fa-angle-down"></i>
                     <div class="dropdown-menu ">
                         <li>
                             <a href="dentalimplants.html" class="dropdown-item ">
@@ -458,14 +460,14 @@
                                 Single Tooth Replacement
                             </a>
                         </li>
-                        
+
                         </ul>
                         </li>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Dentists</a>
-
+                    <i class="fa fa-angle-down"></i>
                     <div class="dropdown-menu ">
                         <li>
                             <a href="dentalimplants.html" class="dropdown-item ">
@@ -486,16 +488,16 @@
                                 Single Tooth Replacement
                             </a>
                         </li>
-                        
+
                         </ul>
                         </li>
                     </div>
                 </div>
-               
+
 
                 <div class="nav-item dropdown">
                     <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Clinic</a>
-
+                    <i class="fa fa-angle-down"></i>
                     <div class="dropdown-menu ">
                         <li>
                             <a href="dentalimplants.html" class="dropdown-item ">
@@ -516,15 +518,15 @@
                                 Single Tooth Replacement
                             </a>
                         </li>
-                     
-                       
+
+
                         </ul>
                         </li>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Smile Gallery</a>
-
+                    <i class="fa fa-angle-down"></i>
                     <div class="dropdown-menu ">
                         <li>
                             <a href="dentalimplants.html" class="dropdown-item ">
@@ -545,48 +547,195 @@
                                 Single Tooth Replacement
                             </a>
                         </li>
-                     
-                       
+
+
                         </ul>
                         </li>
                     </div>
                 </div>
-               
+
             </div>
 
             <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
         </div>
     </nav>
-<style>
-    nav{
-        display: flex;
-        justify-content: space-between;
-        padding: 12px 22px;
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 80px 20px 80px;
+            align-items: center;
+            background-color: black;
+        }
+
+        nav .navbar-toggler {
+            display: none;
+        }
+
+        nav .collapse .navbar-nav {
+            display: flex;
+        }
+
+        nav .collapse .navbar-nav {
+            display: inline-flex;
+
+        }
+
+        nav .collapse .navbar-nav .nav-item {
+            position: relative;
+            padding: 10px 22px;
+
+        }
+
+        nav .collapse .navbar-nav .nav-item:hover {
+            background-color: #bf935e;
+
+        }
+
+        nav .collapse .navbar-nav .nav-item .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+
+        nav .collapse .navbar-nav .nav-item .dropdown-menu {
+            position: absolute;
+            width: 250px;
+            background-color: #bf935e;
+            display: none;
+            left: 0px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        nav .collapse .navbar-nav .nav-item:hover .dropdown-menu {
+
+    opacity: 1;
+            display: block;
+            
+        }
+
+        nav .collapse .navbar-nav .dropdown-menu li {
+
+            list-style-type: none;
+        }
+
+        nav .collapse .navbar-nav .dropdown-menu li a {
+            font-size: 18px !important;
+            color: #fff !important;
+            text-decoration: none;
+            padding: 20px;
+            line-height: 40px;
+        }
+
+        .btn-primary {
+            padding: 28px 50px 22px !important;
+            color: #fff !important;
+            background-color: #bf935e !important;
+            font-size: 12px;
+            line-height: 26px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .fa-angle-down {
+            color: white;
+            font-weight: 600;
+        }
+        @media (max-width: 992px) {
+    nav {
+        padding: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-    nav .navbar-toggler{
+
+    nav .navbar-toggler {
+        display: block;
+       cursor: pointer;
+    }
+    nav .collapse {
+        display: none;
+        width: 100%;
+    
+    }
+    nav .collapse.active {
+        display: block;
+        
+    }
+
+    nav .collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .collapse .navbar-nav .nav-item {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .btn-primary {
         display: none;
     }
-    nav .collapse .navbar-nav{
-display: flex;
-    }
-    nav .collapse .navbar-nav{
-display: inline-flex;
-
-    }
-    nav .collapse .navbar-nav .nav-item{
-
-padding: 10px 22px;
-
-    }
-    nav .collapse .navbar-nav .nav-item li a{
-
-font-size: 22px;
-
-    }
-    nav .collapse .navbar-nav .dropdown-menu{
+    
+    nav .collapse .navbar-nav .nav-item:hover .dropdown-menu {
 display: none;
+}
+    nav .collapse .navbar-nav .nav-item.active .dropdown-menu {
+display: block;
+}
+.fa-angle-down{
+    float: right;
+    cursor: pointer;
+}
+nav .collapse .navbar-nav .nav-item .dropdown-menu{
+    position: unset;
+    width: 100%;
+    background-color: black;
+}
+nav .collapse .navbar-nav .nav-item:hover :not(.dropdown-menu){
+    background-color: transparent;
+}
+}
+    </style>
+    <script>
+        const menu=document.querySelector(".navbar-toggler");
+        const navbar=document.querySelector(".collapse");
+
+menu.addEventListener("click",()=>{
+    if(window.innerWidth<=992){
+navbar.classList.toggle("active")
     }
-</style>
+})
+const menu1 = document.querySelectorAll(".fa-angle-down");
+const navbar1 = document.querySelectorAll(".nav-item");
+
+menu1.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        if (window.innerWidth <= 992) {
+            // Deactivate all nav-items
+            navbar1.forEach((navItem, navIndex) => {
+                if (navIndex !== index) {
+                    navItem.classList.remove("active");
+                }
+            });
+            // Toggle the clicked nav-item
+            navbar1[index].classList.toggle("active");
+        }
+    });
+});
+
+
+
+
+
+
+    </script>
 </body>
 
 </html>
