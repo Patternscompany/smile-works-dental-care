@@ -823,7 +823,7 @@
 
           <p style="font-size: 25px; padding-top: 40px;">Smile Works Dental Care</p>
 
-          <h1 style="padding-bottom: 10px; color: #594D40; font-size: 60px;">Changing Smiles, Changing Lives.</h1></br>
+          <h1 class="smile-subheading">Changing Smiles, Changing Lives.</h1></br>
 
 
 
@@ -861,7 +861,7 @@
             </div>
             <p>Exceptional service! The staff at Smile Works Dental Care were incredibly friendly and professional. From
               the warm welcome to the expert care, my experience was top-notch. Highly recommend!</p>
-            <h4 style="color:#ffffff">Rahul</h4>
+            <h4 class="text-white">Rahul</h4>
           </div>
           <div class="col-md-6 col-lg-4 wow fadeIn text-center" data-wow-delay="0.1s">
             <div>
@@ -872,7 +872,7 @@
               explaining each step of the process thoroughly. The clinic's modern facilities and commitment to patient
               comfort truly set them apart.
             </p>
-            <h4 style="color:#ffffff"> Supriya</h4>
+            <h4 class="text-white "> Supriya</h4>
           </div>
           <div class="col-md-6 col-lg-4 wow fadeIn text-center" data-wow-delay="0.1s">
             <div>
@@ -883,7 +883,7 @@
               and stress-free. The personalized attention and gentle approach put me at ease. Definitely my go-to dental
               clinic from now on.
             </p>
-            <h4 style="color:#ffffff">Shekhar</h4>
+            <h4 class="text-white">Shekhar</h4>
           </div>
         </div>
       </div>
@@ -912,6 +912,15 @@
     .testi h4 {
       color: white;
     }
+    .smile-subheading{
+      padding-bottom: 10px; 
+      color: #594D40; 
+      font-size: 60px;
+      @media (max-width:992px){
+        font-size: 30px;
+        padding-bottom: 0;
+      }
+    }
   </style>
   <!-- Service Start -->
   <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="margin-bottom: 0px;">
@@ -927,12 +936,12 @@
           <h3 class="smile-works fs-1">
             Smile is the curve that heals
           </h3>
-          <p class="treatment-desc fs-3">
+          <p class="treatment-desc">
             Before undergoing dental treatment, it's common to feel a mix of anticipation and apprehension. Thoughts may
             swirl about the procedure's outcome, and concerns about discomfort might arise. However, trust in your
             dentist's expertise and the prospect of improved oral health often ease these pre-treatment jitters.
           </p>
-          <p class="treatment-desc fs-3 mt-5">
+          <p class="treatment-desc mt-5">
             Relief often replaces any initial discomfort, with a sense of accomplishment for taking steps towards better
             oral health. The newfound comfort and restored functionality of your teeth can bring a smile to your face,
             as you appreciate the care and expertise of your dental team. Maintaining good oral hygiene post-treatment
@@ -946,6 +955,9 @@
 
   <style>
     .treatment-desc {
+      font-size: 1.1rem;
+      /* text-align:left; */
+      letter-spacing: 2px;
       @media (min-width:992px) {
         font-size: 20px !important;
       }
@@ -1004,7 +1016,7 @@
 
           <h4 class="fs-1" style="font-family: 'roboto slab'; color: #594D41;">Located in the Heart of Hyderabad.</h4>
           <p class="fs-5 mt-4 font-weight-bold" style="color: #594D41;">TIMINGS</p>
-          <ul class="week-day-list-container fs-3">
+          <ul class="week-day-list-container">
             <li>Sunday | Closed</li>
             <li>Monday | 09:00 AM - 06:00PM</li>
             <li>Tuesday | 09:00 AM - 06:00PM</li>
@@ -1028,7 +1040,12 @@
   <style>
     .week-day-list-container {
       list-style-type: none;
+      font-size: 24px;
       padding-left: 0;
+      @media (max-width:992px){
+        font-size: 18px;
+        line-height: 30px;
+      }
     }
 
     .family-container {
