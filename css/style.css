@@ -679,8 +679,9 @@ img {
 
 .text-grey {
   color: #bfb8ae !important;
-  /* text-align: justify; */
+ 
 }
+
 .brown-btn {
   background-color: #bf935f;
   padding: 20px;
