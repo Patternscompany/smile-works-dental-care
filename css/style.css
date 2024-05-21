@@ -781,9 +781,15 @@ img {
   }
 }
 
+.promise-container {
+  background-color: #000;
+  /* margin-top: -50px; */
+  height: 300px;
+}x
+
 .promises-container br{
   @media(max-width:992px){
-    display: none;
+    display: none !important;
   }
 }
 
@@ -867,3 +873,4 @@ img {
 .stamp-mb-img{
   margin-top: 100px;
 }
+
