@@ -761,9 +761,24 @@ img {
 
 .hero-img .stamp-img {
   position: absolute;
-  top: 85%;
-  right: 5%;
-  width: 200px;
+  top: 85% ;
+  right: 1%;
+  width: 151px;
+  height: 151px;
+  margin-top: 50px;
+}
+@media (max-width:768px) {
+  .hero-img .stamp-img {
+  width: 25%;
+  height: auto;
+  top: 77%;
+  margin-top: 0;
+  }
+}
+@media (min-width:768px) and (max-width:992px) {
+  .hero-img .stamp-img {
+  top: 50%;
+  }
 }
 
 .promises-container br{
