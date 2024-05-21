@@ -2552,7 +2552,7 @@ fieldset:disabled .btn {
 }
 .btn-primary:hover {
   color:white;
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
   transition: all 1s ease;
   /* border-color: var(--primary-color); */
 }
