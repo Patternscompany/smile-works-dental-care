@@ -765,11 +765,6 @@ img {
   right: 5%;
   /* margin-right: 150px; */
   width: 200px;
-  margin-top: 15px;
-  @media (max-width:992px) {
-   right: 1%;
-   margin-top: 5px;
-  }
 }
 
 .promises-container br{
@@ -796,5 +791,8 @@ img {
   }
 }
 .bg-grey{
+  background-color: #4a5764;
+}
+.service-mobile-bg-container{
   background-color: #4a5764;
 }
