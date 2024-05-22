@@ -896,3 +896,17 @@ img {
   font-size: 30px;
   line-height: 40px;
 }
+
+.service-item-card{
+  background-color: #fde686;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* margin: 10px; */
+}
+
+/* .service-item-card img{
+  width: 200px !important;
+} */
