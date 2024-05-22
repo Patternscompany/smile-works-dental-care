@@ -204,7 +204,7 @@ sup {
 }
 a {
   color: var(--primary-color);
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:not([href]):not([class]),
