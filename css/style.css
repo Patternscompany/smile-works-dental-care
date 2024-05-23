@@ -941,7 +941,7 @@ img {
 
 
 .text-brown{
-  color: #594D41;
+  color: #594D41 !important;
 }
 
 .bg-light-grey{
@@ -966,4 +966,7 @@ img {
 }
 .lifelong-bg-container p{
   font-weight: bold;
+}
+.charminar-img{
+  height: 250px;
 }
