@@ -910,8 +910,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  /* margin: 10px; */
+  padding: 7px;
+  /* margin: 12px; */
 }
 
 /* .service-item-card img{
@@ -990,4 +990,9 @@ img {
 .phone {
   display: inline-block;
   margin-top: 12px;
+}
+@media (max-width: 992px) {
+  .bottom-footerbar {
+    margin-bottom: 30px;
+  }
 }
