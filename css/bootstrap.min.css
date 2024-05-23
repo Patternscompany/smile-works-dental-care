@@ -3402,7 +3402,7 @@ fieldset:disabled .btn {
   padding: 0.25rem 1rem;
   clear: both;
   font-weight: 400;
-  color:#ffffff;
+  color:#594D41;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -3412,7 +3412,7 @@ fieldset:disabled .btn {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  color: #bfb8ae;
+  color: #6a6c6d;
   /* background-color: #ffffff; */
 }
 /* .dropdown-item.active,
@@ -3697,7 +3697,7 @@ fieldset:disabled .btn {
 }
 .navbar-nav .dropdown-menu {
   position: static;
-  background-color: #594d40;
+  background-color: #fbeeb8 !important;
 }
 .navbar-text {
   padding-top: 0.5rem;
