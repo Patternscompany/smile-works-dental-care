@@ -832,7 +832,7 @@ img {
 }
 
 .servicebg-container {
-  background-image: url("/img/service-mb-img.png");
+  background-image: url("./img/service-mb-img.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 550px;
