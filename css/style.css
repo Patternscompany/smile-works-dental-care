@@ -790,7 +790,7 @@ img {
 }
 
 .promise-container {
-  background-color: #000;
+  background-color: #686c6d;
   /* margin-top: -50px; */
   /* height: 300px; */
 }
@@ -808,7 +808,7 @@ img {
 }
 
 .dentistry-heading {
-  color: #ffff;
+  color: #594D41;
   padding-bottom: 10px;
   font-size: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
@@ -930,4 +930,12 @@ img {
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 16px;
+}
+
+.text-brown{
+  color: #594D41;
+}
+
+.bg-light-grey{
+  background-color: #AEB1B0;
 }
