@@ -832,12 +832,11 @@ img {
 }
 
 .servicebg-container {
-  background-image: url("/img/service-img.png");
+  background-image: url("/img/service-mb-img.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 550px;
   background-position: top center;
-  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -894,7 +893,7 @@ img {
 .full-mouth-heading {
   color: #ffffff;
   font-weight: 900 !important;
-  font-size: 30px;
+  font-size: 39px;
   line-height: 40px;
 }
 
@@ -946,7 +945,7 @@ img {
 }
 
 .bg-light-grey{
-  background-color: #AEB1B0;
+  background-color: #AEB1B0 !important;
 }
 .bg-light-yellow{
   background-color: #fbeeb8;
