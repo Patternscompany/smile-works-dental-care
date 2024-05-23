@@ -932,10 +932,36 @@ img {
   font-size: 16px;
 }
 
+.grey-rounded-corners{
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  margin-top: 20px;
+}
+
+
 .text-brown{
   color: #594D41;
 }
 
 .bg-light-grey{
   background-color: #AEB1B0;
+}
+.lifelong-bg-container{
+  background-image: url("/img/famil_pic-removebg-preview.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lifelong-bg-container h3{
+  font-size: 45px;
+}
+.lifelong-bg-container p{
+  font-weight: bold;
 }
