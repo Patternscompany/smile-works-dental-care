@@ -6870,7 +6870,13 @@ fieldset:disabled .btn {
   background-color: #fff !important;
 }
 .bg-white {
+  background-color:   #ffffff !important;
+}
+.bg-grey{
   background-color:   #6a6c6d !important;
+}
+.bg-light-grey{
+  background-color: #AEB1B0 !important;
 }
 .bg-transparent {
   background-color: rgba(0, 0, 0, 0) !important;
