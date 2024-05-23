@@ -948,6 +948,9 @@ img {
 .bg-light-grey{
   background-color: #AEB1B0;
 }
+.bg-light-yellow{
+  background-color: #fbeeb8;
+}
 .lifelong-bg-container{
   background-image: url("/img/famil_pic-removebg-preview.png");
   background-size: cover;
