@@ -988,3 +988,7 @@ img {
   text-align: center;
   /* padding-top: 15px; */
 }
+.phone{
+  display: inline-block;
+  margin-top: 12px;
+}
