@@ -911,8 +911,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  /* margin: 10px; */
+  padding: 7px;
+  margin: 12px;
 }
 
 /* .service-item-card img{
