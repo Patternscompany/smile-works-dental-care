@@ -900,9 +900,9 @@ img {
 .full-mouth-heading {
   color: #ffffff;
   font-weight: 900 !important;
+  font-family: 'serif' !important;
   font-size: 39px;
   line-height: 40px;
-  font-family: 'serif' !important;
 }
 
 .service-item-card {
