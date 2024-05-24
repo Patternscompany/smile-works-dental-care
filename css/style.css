@@ -976,6 +976,7 @@ img {
   font-weight: bold;
 }
 .charminar-img {
+  width: 100%;
   height: 250px;
 }
 
