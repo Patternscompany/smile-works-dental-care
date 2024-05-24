@@ -423,7 +423,6 @@ img {
 .abt_sections {
   position: relative;
   padding: 50px 0 50px;
-  margin-bottom: 100px;
 }
 
 .abt_sections::before {
@@ -990,12 +989,12 @@ img {
   text-align: center;
   /* padding-top: 15px; */
 }
-.phone{
+.phone {
   display: inline-block;
   margin-top: 12px;
 }
-@media (max-width:992px){
-  .bottom-footerbar{
+@media (max-width: 992px) {
+  .bottom-footerbar {
     margin-bottom: 30px;
   }
 }
