@@ -2551,7 +2551,7 @@ fieldset:disabled .btn {
   /* border-color: yellow; */
 }
 .btn-primary:hover {
-  color:#ffffff;
+  color:#594D41;
   background-color: #fee686 !important;
   transition: all 1s ease;
   /* border-color: var(--primary-color); */
