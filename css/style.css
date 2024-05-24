@@ -988,6 +988,7 @@ img {
   background-color: #6a6c6d;
   color: #ffffff;
   text-align: center;
+  z-index: 10;
   /* padding-top: 15px; */
 }
 .phone {
