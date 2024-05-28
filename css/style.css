@@ -905,6 +905,13 @@ img {
   line-height: 40px;
 }
 
+@media (max-width:992px){
+  .full-mouth-heading{
+    font-size: 25px;
+  }
+
+}
+
 .service-item-card {
   background-color: #fde686;
   display: flex;
