@@ -161,7 +161,13 @@ h6,
   margin: 0;
 }
 .logo img {
-  border-radius: 50%;
+  width: 200px;
+  height: 100%;
+}
+@media (max-width:992px){
+  .logo img {
+    height: 50%;
+  }
 }
 img {
   vertical-align: middle;
@@ -1023,4 +1029,8 @@ img {
 
 .serif-font{
   font-family: "serif" !important;
+}
+.nav-link i{
+  font-size: 12px;
+  padding-left: 3px;
 }
