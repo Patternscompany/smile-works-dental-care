@@ -41,6 +41,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
      <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,11 +66,13 @@
     </div>
     <!-- Spinner End -->
 
+    <!-- Topbar Start -->
+
     <!-- Navbar Start -->
     <nav
       class="navbar navbar-expand-lg bg-grey navbar-dark shadow-sm px-2 py-3 py-lg-0"
     >
-      <div class="col-6 logo col-lg-4 py-3">
+      <div class="col-6 logo col-lg-4">
         <a href="index.html" class="d-flex align-items-center">
           <!-- Smileworks Dental Care -->
           <img src="./img/logo-latest.png" alt="" />
@@ -88,10 +91,9 @@
         <div class="navbar-nav ms-auto py-0">
           <a href="index.html" class="nav-item nav-link">Home</a>
           <a href="about.html" class="nav-item nav-link">About</a>
-
           <div class="nav-item dropdown">
           
-            <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services<i
+            <a href="service.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services<i
               class="fa fa-chevron-down pq-submenu-icon drop-down-icon"></i></a>
           
   
@@ -163,15 +165,23 @@
           <a href="gallery.html" class="nav-item nav-link">Gallery</a>
           <a href="contact.html" class="nav-item nav-link">Contact</a>
         </div>
-        <button type="button" class="btn text-black" data-bs-toggle="modal" data-bs-target="#searchModal">
+        <button
+          type="button"
+          class="btn text-black"
+          data-bs-toggle="modal"
+          data-bs-target="#searchModal"
+        >
           <i class="fa fa-search"></i>
         </button>
-        <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3">Appointment</a>
+          
+        <a href="appointment.html" class="btn btn-primary py-2 px-4 ms-3"
+          >Appointment</a
+        >
       </div>
     </nav>
     <!-- Navbar End -->
      <!--Mobile View Bottom Navbar Start-->
-   <div class="container-fluid d-lg-none border-top bottom-bar">
+  <div class="container-fluid d-lg-none border-top bottom-bar">
     <div class="container">
       <div class="row">
         <div class="col-6 border-end">
@@ -189,6 +199,7 @@
     </div>
   </div>
   <!--Mobile View Bottom Navbar End-->
+
 
     <div class="whatsapp d-none d-lg-block">
       <a href="https://wa.me/+918181887474"><i class="fa fa-whatsapp"></i></a>
@@ -226,141 +237,165 @@
     </div>
     <!-- Full Screen Search End -->
 
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5">
-      <div class="row py-3">
-        <div class="col-12 text-center">
-          <h1
-            class="display-3 text-white animated zoomIn text-brown"
-           
-          >
-            Appointment
-          </h1>
-          <a href="" class="h4 text-white text-brown"
-            >Home</a
-          >
-          <i class="far fa-circle text-brown px-2 text-brown"></i>
-          <a href="" class="h4 text-brown"
-            >Appointment</a
-          >
-        </div>
-      </div>
-    </div>
-    <!-- Hero End -->
+    <style></style>
 
-    <!-- Appointment Start -->
-    <div
-      class="container-fluid bg-appointment wow fadeInUp"
-      data-wow-delay="0.1s"
+    <!-- <div
+      class="container-fluid servicebg-container bg-light-grey d-none d-lg-block d-flex flex-column justify-content-center align-content-center"
     >
       <div class="container">
-        <div class="row gx-5">
-          <div class="col-lg-6 py-5">
-            <div class="py-5">
-              <h1 class="display-5 text-white mb-4 serif-font">
-                We Are A Certified and Award Winning Dental Clinic You Can Trust
-              </h1>
-              <p class="text-white mb-0">
-                "Caring for your smile starts with us. Schedule your next dental
-                appointment and let us help you achieve a healthy, happy mouth."
+        <div class="row">
+          <div class="col-12">
+            <h2 class="service-heading text-center">
+              A Smile that <span class="text-white">Sparks </span>Confidence.
+            </h2>
+
+            <h5 class="text-uppercase text-brown text-center">
+              your one-stop-shop for all your dental needs
+            </h5>
+          </div>
+          <div
+            class="col-lg-12 col-md-12 hero-img d-flex justify-content-end align-content-end"
+          >
+            <img src="img/stampp.png" class="stamp-img" alt="stamp" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="col-12 service-mobile-bg-container bg-light-grey d-block d-lg-none"
+    >
+      <h2 class="service-heading text-center">
+        A Smile that <span class="text-white">Sparks </span>Confidence.
+      </h2>
+      <h5 class="text-uppercase text-brown text-center fs-5 px-2">
+        your one-stop-shop for all your dental needs
+      </h5>
+      <div
+        class="col-lg-6 col-md-12 hero-img d-flex justify-content-center align-content-end"
+      >
+        <img
+          src="img/service-mb-img.png"
+          class="service-mb-img pt-2"
+          alt="First slide"
+        />
+        <img src="img/stamp.jpg" class="stamp-img" />
+      </div>
+    </div> -->
+
+    <div id="">
+      <div class="container-fluid bg-brown py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 title-heading">
+              <h5 class="text-brown">OUR SERVICES</h5>
+            </div>
+            <div class="col-12 pt-3 text-center">
+              <h2 class="text-uppercase text-brown fs-5 pb-3">
+                improve your quality of life & self-esteem
+              </h2>
+            </div>
+            <div class="col-md-6 p-4 full-mouth-img">
+              <img
+                src="img/single-tooth-replacement.avif"
+                class="full-mouth-img"
+                alt="error"
+              />
+            </div>
+            <div class="col-md-6 d-flex flex-column pt-5">
+              
+              <h3 class="full-mouth-heading text-brown pb-4">
+                Dental Implants
+              </h3>
+
+              <p class="pt-3 dental-parag text-brown">
+                Experience the life-changing benefits of dental implants, which offer a permanent, natural-looking solution for missing teeth. We will help you accomplish a beautiful, functional smile that you'll be proud to show off.
               </p>
             </div>
-          </div>
-          <div class="col-lg-6">
-            <div
-              class="appointment-form h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
-              data-wow-delay="0.6s"
-            >
-              <!-- <h1 class="text-white mb-4">Make An Appointment</h1> -->
-              <form>
-                <div class="row g-3">
-                  <div class="col-12 col-sm-6">
-                    <select class="form-control border-0" style="height: 55px">
-                      <option selected>Select Service</option>
-                      <option value="1">Pediatric Dentistry</option>
-                      <option value="2">Veneers</option>
-                      <option value="3">Tooth Whitening</option>
-                      <option value="4">Tooth Extraction</option>
-                      <option value="5">Crown & Bridge</option>
-                      <option value="6">Orthodontics</option>
-                      <option value="7">Digital Smile Designing</option>
-                      <option value="8">Gum Treatement</option>
-                      <!-- <option value="9">Prosthodontics</option> -->
-                      <option value="10">Root Canal Treatement</option>
-                      <option value="11">Dental Emergency</option>
-                      <option value="12">Dental Implants</option>
-                      
-                      <option value="1">Others</option>
-                    </select>
-                  </div>
-                  <!-- <div class="col-12 col-sm-6">
-                  <select class="form-select bg-light border-0" style="height: 55px;">
-                    <option selected>Select Doctor</option>
-                    <option value="1"> Dr. Siddharth</option>
-                    <option value="2">Doctor 2</option>
-                    <option value="3">Doctor 3</option>
-                  </select>
-                </div> -->
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control border-0"
-                      placeholder="Your Name"
-                      required
-                      style="height: 55px"
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <input
-                      type="email"
-                      class="form-control border-0"
-                      placeholder="Your Email"
-                      required
-                      style="height: 55px"
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6">
-                    <div class="date" id="date1" data-target-input="nearest">
-                      <input
-                        type="text"
-                        class="form-control border-0 datetimepicker-input"
-                        placeholder="Appointment Date"
-                        data-target="#date1"
-                        data-toggle="datetimepicker"
-                        style="height: 55px"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="time" id="time1" data-target-input="nearest">
-                      <input
-                        type="text"
-                        class="form-control border-0 datetimepicker-input"
-                        placeholder="Appointment Time"
-                        data-target="#time1"
-                        data-toggle="datetimepicker"
-                        style="height: 55px"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn yellow-btn w-100 py-3" type="submit">
-                      Make An Appointment
-                    </button>
-                  </div>
-                </div>
-              </form>
+            
+            <div class="col-12">
+              <p class="pt-3 dental-parag text-brown">
+                Our expert team guides you through each step, from planning to the exact placement of implants, securing a smooth integration into your jawbone.
+              </p>
+              <p class="pt-3 dental-parag text-brown">
+                Say goodbye to uncertainty & hello to a new era of confidence -
+                experience the life-changing magic of dental implants at SWDC
+                today.
+              </p>
+              <div>
+                <a href="appointment.html">
+                  <button class="grey-btn text-white text-uppercase">
+                    Schedule A Visit
+                  </button></a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Appointment End -->
+
+    <style>
+      .promise-container {
+        background-color: #fbeeb8;
+        margin-top: -10px;
+        height: 300px;
+
+        @media (max-width: 992px) {
+          margin-top: 0;
+        }
+      }
+
+      h3 {
+        color: #bfb8ae;
+        line-height: 25px;
+        /* font-size: 20px; */
+        /* padding-top: 150px; */
+      }
+
+      /* p {
+      color: #fff;
+      text-align: center;
+      font-size: 20.5px;
+      line-height: 31px;
+    } */
+
+      .title-heading h5 {
+        color: #bfb8ae;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1;
+        padding: 60px 80px 0px 80px;
+      }
+
+      .full-mouth-img {
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      /* 
+    .full-mouth-heading {
+      color: #625244;
+      font-size: 35px;
+      line-height: 40px;
+    } */
+
+      .visit-btn {
+        border: none;
+        background-color: #625244;
+        padding: 20px;
+        align-self: center;
+      }
+    </style>
 
     <!-- Footer Start -->
     <div
-      class="container-fluid bg-grey text-light py-2 wow fadeInUp"
+      class="container-fluid bg-grey text-light py-2 wow mt-0"
       data-wow-delay="0.3s"
+      style="margin-top: -75px"
     >
       <div class="container pt-5">
         <div class="row g-5 pt-4">
@@ -389,7 +424,7 @@
                 href="#"
                 ><i class="fa fa-facebook-f"></i
               ></a>
-              <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""
+              <a class="btn btn-lg btn-primary btn-lg-square rounded" href="#"
                 ><i class="fa fa-instagram"></i
               ></a>
             </div>
@@ -462,8 +497,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid text-light py-4 bg-light-grey" >
-    
+    <div class="container-fluid text-light py-4 bg-light-grey">
       <div class="container">
         <div class="row g-0">
           <div class="col-md-6 text-center text-md-start">
@@ -506,7 +540,6 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="lib/twentytwenty/jquery.event.move.js"></script>
     <script src="lib/twentytwenty/jquery.twentytwenty.js"></script>
-    <script src="https://kit.fontawesome.com/35f3e4fe0e.js" crossorigin="anonymous"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

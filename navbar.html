@@ -425,15 +425,14 @@
     </section> -->
     <nav class="navbar navbar-expand-lg bg-white navbar-dark shadow-sm px-5 py-3 py-lg-0">
         <div class="col-6 logo col-lg-4 py-3">
-            <a href="/" class="d-flex  align-items-center">
+            <a href="/" class="d-flex align-items-center">
                 <!-- Smileworks Dental Care -->
-
-                <h2><span>SMILE WORKS</span><br>DENTAL CARE</h2>
+                <img src="/img/logo-latest.png" alt="logo latest" class="logo-img">
             </a>
 
         </div>
         <button class="navbar-toggler">
-           <i class="fa fa-bars"></i>
+            <i class="fa fa-bars icon"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0">
@@ -568,9 +567,14 @@
         nav {
             display: flex;
             justify-content: space-between;
-            padding: 20px 80px 20px 80px;
+            padding: 15px 80px 15px 80px;
             align-items: center;
             background-color: black;
+        }
+
+        .logo-img {
+            width: 170px;
+            height: 100px;
         }
 
         nav .navbar-toggler {
@@ -588,7 +592,7 @@
 
         nav .collapse .navbar-nav .nav-item {
             position: relative;
-            padding: 10px 22px;
+            padding: 10px 14px;
 
         }
 
@@ -610,15 +614,15 @@
             background-color: #bf935e;
             display: none;
             left: 0px;
-      
+
             transition: opacity 0.5s ease;
         }
 
         nav .collapse .navbar-nav .nav-item:hover .dropdown-menu {
 
- 
+
             display: block;
-            
+
         }
 
         nav .collapse .navbar-nav .dropdown-menu li {
@@ -648,87 +652,97 @@
             color: white;
             font-weight: 600;
         }
+
         @media (max-width: 992px) {
-    nav {
-        padding: 20px;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+            nav {
+                padding: 20px;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
 
-    nav .navbar-toggler {
-        display: block;
-       cursor: pointer;
-    }
-    nav .collapse {
-        display: none;
-        width: 100%;
-    
-    }
-    nav .collapse.active {
-        display: block;
-        
-    }
+            nav .navbar-toggler {
+                display: block;
+                cursor: pointer;
+                background-color: #000;
+                color: #ffffff;
+                border: none;
+                font-size: 25px;
+            }
 
-    nav .collapse .navbar-nav {
-        flex-direction: column;
-        width: 100%;
-    }
+            nav .collapse {
+                display: none;
+                width: 100%;
 
-    nav .collapse .navbar-nav .nav-item {
-        padding: 10px;
-        text-align: center;
-    }
+            }
 
-    .btn-primary {
-        display: none;
-    }
-    
-    nav .collapse .navbar-nav .nav-item:hover .dropdown-menu {
-display: none;
-}
-    nav .collapse .navbar-nav .nav-item.active .dropdown-menu {
-display: block;
-}
-.fa-angle-down{
-    float: right;
-    cursor: pointer;
-}
-nav .collapse .navbar-nav .nav-item .dropdown-menu{
-    position: unset;
-    width: 100%;
-    background-color: black;
-}
-nav .collapse .navbar-nav .nav-item:hover :not(.dropdown-menu){
-    background-color: transparent;
-}
-}
+            nav .collapse.active {
+                display: block;
+
+            }
+
+            nav .collapse .navbar-nav {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            nav .collapse .navbar-nav .nav-item {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .btn-primary {
+                display: none;
+            }
+
+            nav .collapse .navbar-nav .nav-item:hover .dropdown-menu {
+                display: none;
+            }
+
+            nav .collapse .navbar-nav .nav-item.active .dropdown-menu {
+                display: block;
+            }
+
+            .fa-angle-down {
+                float: right;
+                cursor: pointer;
+            }
+
+            nav .collapse .navbar-nav .nav-item .dropdown-menu {
+                position: unset;
+                width: 100%;
+            }
+
+            nav .collapse .navbar-nav .nav-item:hover :not(.dropdown-menu) {
+                background-color: transparent;
+            }
+        }
     </style>
     <script>
-        const menu=document.querySelector(".navbar-toggler");
-        const navbar=document.querySelector(".collapse");
+        const menu = document.querySelector(".navbar-toggler");
+        const navbar = document.querySelector(".collapse");
 
-menu.addEventListener("click",()=>{
-    if(window.innerWidth<=992){
-navbar.classList.toggle("active")
-    }
-})
-const menu1 = document.querySelectorAll(".fa-angle-down");
-const navbar1 = document.querySelectorAll(".nav-item");
+        menu.addEventListener("click", () => {
+            if (window.innerWidth <= 992) {
+                navbar.classList.toggle("active")
+            }
+        })
+        const menu1 = document.querySelectorAll(".fa-angle-down");
+        const navbar1 = document.querySelectorAll(".nav-item");
 
-menu1.forEach((button, index) => {
-    button.addEventListener("click", () => {
-        if (window.innerWidth <= 992) {
-            // Deactivate all nav-items
-            navbar1.forEach((navItem, navIndex) => {
-                if (navIndex !== index) {
-                    navItem.classList.remove("active");
+        menu1.forEach((button, index) => {
+            button.addEventListener("click", () => {
+                if (window.innerWidth <= 992) {
+                    // Deactivate all nav-items
+                    navbar1.forEach((navItem, navIndex) => {
+                        if (navIndex !== index) {
+                            navItem.classList.remove("active");
+                        }
+                    });
+                    // Toggle the clicked nav-item
+                    navbar1[index].classList.toggle("active");
                 }
             });
-            // Toggle the clicked nav-item
-            navbar1[index].classList.toggle("active");
-        }
-    });
-});
+        });
 
 
 
@@ -736,7 +750,7 @@ menu1.forEach((button, index) => {
 
 
     </script>
-    <form method="POST" id="form">
+    <!-- <form method="POST" id="form">
 
         <input type="hidden" name="access_key" value="5f284d44-ffdc-4536-b9e4-1741a67206ce">
     
@@ -750,22 +764,22 @@ menu1.forEach((button, index) => {
     
         <div id="result"></div>
     
-    </form>
-    
+    </form> -->
+
     <script src="https://web3forms.com/client/script.js" async defer></script>
-    
+
     <script>
-    const form = document.getElementById('form');
-    const result = document.getElementById('result');
-    
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-      result.innerHTML = "Please wait..."
-    
-        fetch('https://api.web3forms.com/submit', {
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            result.innerHTML = "Please wait..."
+
+            fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -773,27 +787,27 @@ menu1.forEach((button, index) => {
                 },
                 body: json
             })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    result.innerHTML = "Form submitted successfully";
-                } else {
-                    console.log(response);
-                    result.innerHTML = json.message;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                result.innerHTML = "Something went wrong!";
-            })
-            .then(function() {
-                form.reset();
-                setTimeout(() => {
-                    result.style.display = "none";
-                }, 3000);
-            });
-    });
-  
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = "Form submitted successfully";
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function () {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
+
     </script>
 </body>
 

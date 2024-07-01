@@ -204,7 +204,7 @@ sup {
 }
 a {
   color: var(--primary-color);
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:not([href]):not([class]),
@@ -1816,7 +1816,7 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #6b6a75;
-  background-color: #fff;
+  background-color: #fbeeb8 !important;
   background-clip: padding-box;
   border: 1px solid #bfb8ae ;
   appearance: none;
@@ -1845,7 +1845,7 @@ progress {
   height: 1.5em;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #594d40 !important;
   opacity: 1;
 }
 .form-control:disabled,
@@ -2551,7 +2551,7 @@ fieldset:disabled .btn {
   /* border-color: yellow; */
 }
 .btn-primary:hover {
-  color:#ffffff;
+  color:#594D41;
   background-color: #fee686 !important;
   transition: all 1s ease;
   /* border-color: var(--primary-color); */
@@ -3402,17 +3402,18 @@ fieldset:disabled .btn {
   padding: 0.25rem 1rem;
   clear: both;
   font-weight: 400;
-  color:#ffffff;
+  color:#594D41;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
+  font-weight: bold;
   border: 0;
   /* border-bottom: 1px solid white; */
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  color: #bfb8ae;
+  color: #6a6c6d;
   /* background-color: #ffffff; */
 }
 /* .dropdown-item.active,
@@ -3697,7 +3698,7 @@ fieldset:disabled .btn {
 }
 .navbar-nav .dropdown-menu {
   position: static;
-  background-color: #594d40;
+  background-color: #fbeeb8 !important;
 }
 .navbar-text {
   padding-top: 0.5rem;
@@ -6870,7 +6871,13 @@ fieldset:disabled .btn {
   background-color: #fff !important;
 }
 .bg-white {
-  background-color:   #000000!important;
+  background-color:   #ffffff !important;
+}
+.bg-grey{
+  background-color:   #6a6c6d !important;
+}
+.bg-light-grey{
+  background-color: #AEB1B0 !important;
 }
 .bg-transparent {
   background-color: rgba(0, 0, 0, 0) !important;
