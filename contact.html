@@ -262,22 +262,22 @@
           </div>
         </div>
         <div class="col-xl-6 col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-          <form>
+          <form id="contactForm">
             <div class="row g-3">
               <div class="col-12">
-                <input type="text" class="form-control px-4" placeholder="Your Name" required
+                <input type="text" id="name" class="form-control px-4" placeholder="Your Name" required
                   style="height: 55px;">
               </div>
               <div class="col-12">
-                <input type="email" class="form-control px-4" placeholder="Your Email" required
+                <input type="email" id="email" class="form-control px-4" placeholder="Your Email" required
                   style="height: 55px;">
               </div>
               <div class="col-12">
-                <input type="text" class="form-control px-4" placeholder="Subject" required
+                <input type="text" id="subject" class="form-control px-4" placeholder="Subject" required
                   style="height: 55px;">
               </div>
               <div class="col-12">
-                <textarea class="form-control px-4 py-3" rows="5" placeholder="Message" required></textarea>
+                <textarea id="message" class="form-control px-4 py-3" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="col-12">
                 <button class="btn classs w-100 py-3" type="submit">Send Message</button>
@@ -436,6 +436,21 @@
 
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value;
+
+      var whatsappMessage = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+      var whatsappURL = `https://api.whatsapp.com/send?phone=8181887474&text=${encodeURIComponent(whatsappMessage)}`;
+      console.log(whatsappURL);
+      window.open(whatsappURL, '_blank');
+    });
+  </script>
 </body>
 
 </html>
