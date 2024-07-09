@@ -287,84 +287,47 @@
               data-wow-delay="0.6s"
             >
               <!-- <h1 class="text-white mb-4">Make An Appointment</h1> -->
-              <form>
+              <form id="appointmentForm">
                 <div class="row g-3">
                   <div class="col-12 col-sm-6">
-                    <select class="form-control border-0" style="height: 55px">
+                    <select id="service" class="form-control border-0" style="height: 55px">
                       <option selected>Select Service</option>
-                      <option value="1">Pediatric Dentistry</option>
-                      <option value="2">Veneers</option>
-                      <option value="3">Tooth Whitening</option>
-                      <option value="4">Tooth Extraction</option>
-                      <option value="5">Crown & Bridge</option>
-                      <option value="6">Orthodontics</option>
-                      <option value="7">Digital Smile Designing</option>
-                      <option value="8">Gum Treatement</option>
-                      <!-- <option value="9">Prosthodontics</option> -->
-                      <option value="10">Root Canal Treatement</option>
-                      <option value="11">Dental Emergency</option>
-                      <option value="12">Dental Implants</option>
-                      
-                      <option value="1">Others</option>
+                      <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                      <option value="Veneers">Veneers</option>
+                      <option value="Tooth Whitening">Tooth Whitening</option>
+                      <option value="Tooth Extraction">Tooth Extraction</option>
+                      <option value="Crown & Bridge">Crown & Bridge</option>
+                      <option value="Orthodontics">Orthodontics</option>
+                      <option value="Digital Smile Designing">Digital Smile Designing</option>
+                      <option value="Gum Treatment">Gum Treatment</option>
+                      <option value="Root Canal Treatment">Root Canal Treatment</option>
+                      <option value="Dental Emergency">Dental Emergency</option>
+                      <option value="Dental Implants">Dental Implants</option>
+                      <option value="Others">Others</option>
                     </select>
                   </div>
-                  <!-- <div class="col-12 col-sm-6">
-                  <select class="form-select bg-light border-0" style="height: 55px;">
-                    <option selected>Select Doctor</option>
-                    <option value="1"> Dr. Siddharth</option>
-                    <option value="2">Doctor 2</option>
-                    <option value="3">Doctor 3</option>
-                  </select>
-                </div> -->
                   <div class="col-12 col-sm-6">
-                    <input
-                      type="text"
-                      class="form-control border-0"
-                      placeholder="Your Name"
-                      required
-                      style="height: 55px"
-                    />
+                    <input type="text" id="name" class="form-control border-0" placeholder="Your Name" required style="height: 55px" />
                   </div>
                   <div class="col-12 col-sm-6">
-                    <input
-                      type="email"
-                      class="form-control border-0"
-                      placeholder="Your Email"
-                      required
-                      style="height: 55px"
-                    />
+                    <input type="email" id="email" class="form-control border-0" placeholder="Your Email" required style="height: 55px" />
                   </div>
                   <div class="col-12 col-sm-6">
                     <div class="date" id="date1" data-target-input="nearest">
-                      <input
-                        type="text"
-                        class="form-control border-0 datetimepicker-input"
-                        placeholder="Appointment Date"
-                        data-target="#date1"
-                        data-toggle="datetimepicker"
-                        style="height: 55px"
-                      />
+                      <input type="text" id="appointmentDate" class="form-control border-0 datetimepicker-input" placeholder="Appointment Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px" />
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="time" id="time1" data-target-input="nearest">
-                      <input
-                        type="text"
-                        class="form-control border-0 datetimepicker-input"
-                        placeholder="Appointment Time"
-                        data-target="#time1"
-                        data-toggle="datetimepicker"
-                        style="height: 55px"
-                      />
+                      <input type="text" id="appointmentTime" class="form-control border-0 datetimepicker-input" placeholder="Appointment Time" data-target="#time1" data-toggle="datetimepicker" style="height: 55px" />
                     </div>
                   </div>
                   <div class="col-12">
-                    <button class="btn yellow-btn w-100 py-3" type="submit">
-                      Make An Appointment
-                    </button>
+                    <button class="btn yellow-btn w-100 py-3" type="submit">Make An Appointment</button>
                   </div>
                 </div>
               </form>
+            
             </div>
           </div>
         </div>
@@ -525,5 +488,24 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+      document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var service = document.getElementById('service').value;
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var appointmentDate = document.getElementById('appointmentDate').value;
+      var appointmentTime = document.getElementById('appointmentTime').value;
+
+      var whatsappMessage = `Service: ${service}\nName: ${name}\nEmail: ${email}\nAppointment Date: ${appointmentDate}\nAppointment Time: ${appointmentTime}`;
+      var whatsappURL = `https://api.whatsapp.com/send?phone=8181887474&text=${encodeURIComponent(whatsappMessage)}`;
+
+      console.log("Opening WhatsApp URL: " + whatsappURL);
+
+      window.open(whatsappURL, '_blank');
+    });
+    </script>
   </body>
 </html>
