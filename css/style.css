@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+
 :root {
   --primary: #06a3da;
   --secondary: #000000;
@@ -53,7 +54,7 @@ h6,
     font-size: 15px;
   }
   .logo a h2 {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 .btn-primary,
@@ -154,21 +155,76 @@ h6,
     padding: 10px 0;
   }
 }
-.logo a h2 {
+.smile-works-logo{
+  font-size: 35px;
+  color: #FDE585;
+  padding-left: 10px;
+  margin-bottom: 0;
+  font-family: 'arimo';
+}
+.logo .dental-care-logo{
+  color: #fff;
+  font-size: 25px;
+  margin-top: 0;
+  font-family: 'arimo';
+}
+.logo h3{
+  color: #fff;
+  font-size: 15px;
+  margin-block: 0;
+  font-family: 'arimo';
+}
+.logo h4{
+  color: #fff;
+  font-size: 15px;
+  margin-block: 0;
+  font-family: 'arimo';
+}
+.mobile-logo{
+  color: #fff;
+  font-size: 12px !important;
+  margin-block: 0;
+  font-family: 'arimo';
+}
+/* .logo a h2 {
   font-size: 16px;
   letter-spacing: 10px;
   color: white;
   margin: 0;
-}
+} */
 .logo img {
-  width: 280px;
+  /* width: 280px; */
   height: 100%;
 }
 @media (max-width:992px){
   .logo img {
-    width: 170px;
-    height: 50%;
+    width: 70px;
+    height: 60%;
   }
+.smile-works-logo{
+    font-size: 17px;
+  }
+  .logo .dental-care-logo{
+    font-size: 11px;
+  }
+  .logo h3{
+    font-size: 10px;
+  }
+  .logo h4{
+    font-size: 10px;
+    color: #fff;
+    font-family: "arimo";
+  }
+}
+.logo-1{
+  width: 100px;
+  padding-bottom: 10px;
+  /* height: 150px !important; */
+}
+.logo-2{
+  width: 200px;
+  padding: 0;
+  height: 100%;
 }
 img {
   vertical-align: middle;
@@ -771,7 +827,7 @@ img {
 
 .hero-img .main-image {
   max-width: 100%;
-  min-height: auto;
+  min-height: 400px;
   margin-top: 140px;
 
   /* margin-right: 200px; */
@@ -823,7 +879,7 @@ img {
 
 .dentistry-heading {
   color: #594d41;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   font-size: 50px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", "Geneva", Verdana, sans-serif;
@@ -1034,4 +1090,41 @@ img {
 .nav-link i{
   font-size: 12px;
   padding-left: 3px;
+}
+.doctor-card{
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fde686;
+  margin: 10px;
+  flex: 1; /* Ensure the cards take up equal space */
+  display: flex;
+  flex-direction: column; /* Ensure the inner contents are arranged vertically */
+  justify-content: space-between;
+}
+.service-card-name {
+  color: #594d41;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+@media (min-width:576px) and (max-width:992px) {
+  .service-card-name {
+    font-size: 17px;
+  }
+}
+
+@media (max-width:576px) {
+  .service-card-name {
+    font-size: 15px;
+  }
+}
+
+.doctor-phd{
+  font-size: 17px;
+  flex-shrink: 0;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
 }

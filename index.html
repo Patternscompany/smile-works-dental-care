@@ -29,6 +29,11 @@
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
   <!--Google Fonts-->
@@ -60,10 +65,22 @@
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-grey navbar-dark shadow-sm px-2 py-3 py-lg-0">
     <div class="col-6 logo col-lg-4 py-3">
-      <a href="index.html" class="d-flex  align-items-center">
+      <a href="index.html" class="d-flex flex-column justify-content-center align-items-center">
         <!-- Smileworks Dental Care -->
-        <img src="./img/Smile_works_Final_Logo.png" alt="">
-        <!-- <h2><span>SMILE WORKS</span><br>DENTAL CARE</h2> -->
+
+        <div class="d-flex align-items-center">
+          <img src="./img/2.png" alt="logo" class="logo-1">
+          <!-- <img src="./img/1.png" alt="logo" class="logo-2"> -->
+          <!-- <h2><span>SMILE WORKS</span><br>DENTAL CARE</h2> -->
+          <div class="mb-0">
+            <h2 class="smile-works-logo">Smile Works</h2>
+            <h3 class="dental-care-logo text-center">Dental Care</h3>
+            <h4 class="text-center d-none d-lg-block">Precision Passion Perfection</h4>
+          </div>
+        </div>
+        <h5 class="mobile-logo text-center d-lg-none mt-0">Precision Passion Perfection</h5>
+
+
       </a>
 
     </div>
@@ -78,7 +95,7 @@
         <div class="nav-item dropdown">
 
           <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services<i
-            class="fa fa-chevron-down pq-submenu-icon drop-down-icon"></i></a>
+              class="fa fa-chevron-down pq-submenu-icon drop-down-icon"></i></a>
 
 
 
@@ -222,7 +239,7 @@
 
     <div class="container" role="listbox">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-6 col-md-12  p-2">
+        <div class="col-lg-6 col-md-12 p-2">
           <div class="para">
             <p>Top-Tier Dental Excellence</p>
           </div>
@@ -263,7 +280,7 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-12 hero-img d-flex justify-content-center align-content-end ">
-          <img src="img/smilly.jpg" class="main-image pt-5" alt="First slide">
+          <img src="img/home_hero_bg.png" class="main-image pt-5" alt="First slide">
           <img src="img/stamp.jpg" class="stamp-img">
         </div>
 
@@ -401,22 +418,24 @@
 
   <style>
     .service-name {
-      color: #594d41;
-      font-weight: 700;
-      font-size: 17px;
-    }
+  color: #594d41;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  flex: 1;
+}
 
-    @media (min-width:576px) and (max-width:992px) {
-      .service-name {
-        font-size: 13px;
-      }
-    }
+@media (min-width:576px) and (max-width:992px) {
+  .service-name {
+    font-size: 17px;
+  }
+}
 
-    @media (max-width:576px) {
-      .service-name {
-        font-size: 10px;
-      }
-    }
+@media (max-width:576px) {
+  .service-name {
+    font-size: 10px;
+  }
+}
   </style>
 
   <div class="container-fluid  text-center service-container wow zoomIn">
@@ -543,7 +562,8 @@
             <div>
               <p class="rating fs-1"> &#9733; &#9733; &#9733; &#9733; &#9733;</p>
             </div>
-            <p class="text-white">Exceptional service! The staff at Smile Works Dental Care were incredibly friendly and professional. From the warm welcome to the expert care, my experience was top-notch. Highly recommend!</p>
+            <p class="text-white">Exceptional service! The staff at Smile Works Dental Care were incredibly friendly and
+              professional. From the warm welcome to the expert care, my experience was top-notch. Highly recommend!</p>
             <h4 class="text-white">Rahul</h4>
           </div>
           <div class="col-md-6 col-lg-4 wow fadeIn text-center" data-wow-delay="0.1s">
@@ -551,7 +571,9 @@
               <p class="rating fs-1"> &#9733; &#9733; &#9733; &#9733; &#9733;</p>
             </div>
             <p class="text-white">
-              I'm so grateful for the wonderful care I received at Smile Works Dental Care. The dentists were attentive, explaining each step of the process thoroughly. The clinic's modern facilities and commitment to patient comfort truly set them apart.
+              I'm so grateful for the wonderful care I received at Smile Works Dental Care. The dentists were attentive,
+              explaining each step of the process thoroughly. The clinic's modern facilities and commitment to patient
+              comfort truly set them apart.
             </p>
             <h4 class="text-white "> Supriya</h4>
           </div>
@@ -560,7 +582,9 @@
               <p class="rating fs-1"> &#9733; &#9733; &#9733; &#9733; &#9733;</p>
             </div>
             <p class="text-white">
-              Five stars for Smile Works Dental Care! The entire team went above and beyond to make my visit comfortable and stress-free. The personalized attention and gentle approach put me at ease. Definitely my go-to dental clinic from now on.
+              Five stars for Smile Works Dental Care! The entire team went above and beyond to make my visit comfortable
+              and stress-free. The personalized attention and gentle approach put me at ease. Definitely my go-to dental
+              clinic from now on.
             </p>
             <h4 class="text-white">Shekhar</h4>
           </div>
@@ -618,7 +642,7 @@
             Dentistry, I am dedicated to ensure that each individual receives the highest quality treatment tailored to
             their unique needs.
           </p>
-          <a href="#" class="text-white">
+          <a href="ourdoctors.html" class="text-white">
             <button class="justify-content-end mb-3 d-none d-lg-inline-block grey-btn">
               Meet Our Team
             </button>
@@ -626,7 +650,7 @@
         </div>
         <div class="col-lg-4">
           <img src="./img/doctor.jpg" alt="" class="w-100">
-          <a href="#" class="text-white">
+          <a href="ourdoctors.html" class="text-white">
             <button class="justify-content-end my-3 d-block d-lg-none grey-btn">
               Meet Our Team
             </button>
@@ -674,7 +698,6 @@
       color: #000000;
       border: 2px solid #000000;
     }
-
   </style>
   <!-- Service End -->
 
@@ -729,7 +752,10 @@
 
         </div>
         <div class="col-lg-6">
-          <iframe class="w-100 border-none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.1119879741336!2d78.37589059999999!3d17.4064125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb941a7bcc7f51%3A0x70a6f14a3297e592!2sC94G%2BH96%2C%20Sri%20Laxmi%20Nagar%20Colony%2C%20Manikonda%2C%20Hyderabad%2C%20Telangana%20500089!5e0!3m2!1sen!2sin!4v1716966042219!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="w-100 border-none"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.1119879741336!2d78.37589059999999!3d17.4064125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb941a7bcc7f51%3A0x70a6f14a3297e592!2sC94G%2BH96%2C%20Sri%20Laxmi%20Nagar%20Colony%2C%20Manikonda%2C%20Hyderabad%2C%20Telangana%20500089!5e0!3m2!1sen!2sin!4v1716966042219!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
