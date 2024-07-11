@@ -193,13 +193,12 @@ h6,
   margin: 0;
 } */
 .logo img {
-  /* width: 280px; */
+  width: 280px;
   height: 100%;
 }
 @media (max-width:992px){
   .logo img {
-    width: 70px;
-    height: 60%;
+    width: 130%;
   }
 .smile-works-logo{
     font-size: 17px;
@@ -216,10 +215,10 @@ h6,
     font-family: "arimo";
   }
 }
-.logo-1{
-  width: 100px;
-  padding-bottom: 10px;
-  /* height: 150px !important; */
+@media (max-width:992px){
+  .logo-1{
+    width: 100%;
+  }
 }
 .logo-2{
   width: 200px;
