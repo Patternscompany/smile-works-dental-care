@@ -1100,8 +1100,8 @@ img {
   display: flex;
   flex-direction: column; /* Ensure the inner contents are arranged vertically */
   justify-content: center;
-  align-items: center;
-  min-height: 150px;
+  /* align-items: center; */
+  min-height: 200px;
 }
 .doctor-card img{
   width: 100%;
@@ -1113,7 +1113,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  flex: 1;
+ 
 }
 
 @media (min-width:576px) and (max-width:992px) {
