@@ -1137,3 +1137,32 @@ img {
   overflow: hidden;
   text-overflow: ellipsis; */
 }
+.error-container{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.error-btn{
+  background-color: #6a6c6d;
+  color: #fff;
+  padding: 20px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.error-text{
+  color: #594d41;
+  font-size: 100px;
+}
+@media (max-width:992px){
+  .error-container{
+    height: 100vh;
+  }
+  .error-text{
+    font-size: 30px;
+  }
+  .error-btn{
+    font-size: 20px;
+  }
+}
