@@ -741,14 +741,15 @@
             Manikonda"</h4>
           <p class="fs-5 mt-4 font-weight-bold text-brown">TIMINGS</p>
           <ul class="week-day-list-container text-brown">
-            <li>MON | 09:30AM - 08:00PM</li>
-            <li>TUE | 09:30AM - 08:00PM</li>
-            <li>WED | 09:30AM - 08:00PM</li>
-            <li>THU | 09:30AM - 08:00PM</li>
-            <li>FRI | 09:30AM - 08:00PM</li>
-            <li>SAT | 09:30AM - 08:00PM</li>
-            <li>SUN | 09:30AM - 01:30PM</li>
-          </ul>
+            <li><span class="time-slot">MON</span><span class="time-range">| 09:30AM - 08:00PM</span></li>
+            <li><span class="time-slot">TUE</span><span class="time-range">| 09:30AM - 08:00PM</span></li>
+            <li><span class="time-slot">WED</span><span class="time-range">| 09:30AM - 08:00PM</span></li>
+            <li><span class="time-slot">THU</span><span class="time-range">| 09:30AM - 08:00PM</span></li>
+            <li><span class="time-slot">FRI</span><span class="time-range">| 09:30AM - 08:00PM</span></li>
+            <li><span class="time-slot">SAT</span><span class="time-range">| 09:30AM - 08:00PM</span></li>
+            <li><span class="time-slot">SUN</span><span class="time-range">| 09:30AM - 01:30PM</span></li>
+        </ul>
+        
           <a href="https://maps.app.goo.gl/1JFoThdSVEof6wLu6" target="_blank">
             <button class="border-none grey-btn">View Location</button>
           </a>
@@ -765,6 +766,35 @@
 
     </div>
   </div>
+
+  <style>
+    .week-day-list-container {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .week-day-list-container li {
+        display: inline-block;
+        width: 100%; /* Ensures all items take the full width of the container */
+        text-align: left; /* Align text to the left */
+        font-size: 16px; /* Adjust font size as needed */
+        padding: 5px 0;
+        border-bottom: 1px solid #dcdcdc; /* Optional: Add a bottom border for each item */
+    }
+    
+    .time-slot {
+        display: inline-block;
+        width: 30%; /* Width for the days */
+    }
+    
+    .time-range {
+        display: inline-block;
+        width: 65%; /* Width for the time */
+        text-align: right; /* Align the time range to the right */
+    }
+    </style>
+    
 
   <style>
     .week-day-list-container {
