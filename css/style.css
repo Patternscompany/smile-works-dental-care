@@ -965,6 +965,7 @@ img {
   font-family: 'serif' !important;
   font-size: 39px;
   line-height: 40px;
+  /* position: fixed; */
 }
 
 @media (max-width:992px){
