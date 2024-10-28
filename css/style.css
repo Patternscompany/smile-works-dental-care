@@ -971,6 +971,7 @@ img {
 @media (max-width:992px){
   .full-mouth-heading{
     font-size: 35px;
+    /* line-height: 25px; */
   }
 
 }
