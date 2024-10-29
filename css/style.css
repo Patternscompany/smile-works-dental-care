@@ -842,7 +842,7 @@ img {
   right: 1%;
   width: 151px;
   height: 151px;
-  margin-top: 50px;
+  margin-top:-10px;
 }
 @media (max-width: 768px) {
   .hero-img .stamp-img {
