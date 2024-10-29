@@ -826,8 +826,8 @@ img {
 
 .hero-img .main-image {
   max-width: 100%;
-  min-height: 400px;
-  margin-top: 140px;
+  min-height: 500px;
+  margin-top: 240px;
 
   /* margin-right: 200px; */
   @media (max-width: 992px) {
